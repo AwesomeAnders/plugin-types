@@ -1,8 +1,5 @@
-<script setup lang="ts">
-definePageMeta({
-  layout: false,
-});
-const newQuery = { test: "test" };
+<script setup>
+const newQuery = { query: "query" };
 
 const router = useRouter();
 
@@ -10,7 +7,7 @@ router.replace({ query: newQuery });
 </script>
 
 <template>
-  <NuxtLayout name="filter-layout">
+  <NuxtLayout>
     current query {{ $router.currentRoute.value.query }}
   </NuxtLayout>
 </template>

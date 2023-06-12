@@ -1,5 +1,8 @@
 <script setup>
-const newQuery = { index: "index" };
+definePageMeta({
+  layout: false,
+});
+const newQuery = { query: "query" };
 
 const router = useRouter();
 
